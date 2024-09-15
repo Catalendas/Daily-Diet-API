@@ -24,7 +24,7 @@ Siga os passos abaixo para a instalação do projeto em sua máquina:
 
 1. Instale o [Git](https://git-scm.com/).
 2. Instale o [Node.js](https://nodejs.org/en).
-3. Clone o repositório do projeto com o comando `git clone https://github.com/Catalendas/food-explorer-back-end.git`.
+3. Clone o repositório do projeto com o comando `git clone https://github.com/Catalendas/Daily-Diet-API.git`.
 4. Abra o terminal na pasta do projeto e execute o comando `npm i` para instalar as dependências do projeto.
 5. Rode o comando `npm run dev` para executar o projeto em ambiente de desenvolvimento (a API utilizada será a que está em produção).
 
