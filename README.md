@@ -8,15 +8,15 @@ Projeto de uma API feita me node.js utilizando fastify.
 O projeto consiste em um organizador de dietas onde o usuario do sistema pode cadastrar as refeições que fez fora e dentro da dieta e receber um feedback com metricas com base no cadastro de suas refeições.
 
 Dependencias utilizadas e suas verções:
-    - "@fastify/cookie": "^9.4.0",
-    - "@types/bcrypt": "^5.0.2",
-    - "@types/node": "^22.5.4",
-    - "bcrypt": "^5.1.1",
-    - "dotenv": "^16.4.5",
-    - "fastify": "^4.28.1",
-    - "knex": "^3.1.0",
-    - "sqlite3": "^5.1.7",
-    - "zod": "^3.23.8"
+ - "@fastify/cookie": "^9.4.0",
+ - "@types/bcrypt": "^5.0.2",
+ - "@types/node": "^22.5.4",
+ - "bcrypt": "^5.1.1",
+ - "dotenv": "^16.4.5",
+ - "fastify": "^4.28.1",
+ - "knex": "^3.1.0",
+ - "sqlite3": "^5.1.7",
+ - "zod": "^3.23.8"
 
 ### Como executar o projeto?
 
