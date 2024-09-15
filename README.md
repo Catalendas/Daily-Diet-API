@@ -4,7 +4,7 @@ Modelagem do banco de daods:
 
 ![image](https://github.com/user-attachments/assets/b70c8f8f-f043-4dbd-9200-8c0a7f6c427d)
 
-Projeto de uma API feita me node.js utilizando fastify.
+Projeto de uma API feita me node.js utilizando fastify e typescript.
 O projeto consiste em um organizador de dietas onde o usuario do sistema pode cadastrar as refeições que fez fora e dentro da dieta e receber um feedback com metricas com base no cadastro de suas refeições.
 
 Dependencias utilizadas e suas verções:
