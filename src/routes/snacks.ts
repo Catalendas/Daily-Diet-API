@@ -4,7 +4,7 @@ import { knex } from "../database";
 import { Auth } from "../middleware/auht";
 import { randomUUID } from "crypto";
 
-export async function Snaks(app: FastifyInstance) {
+export async function Snacks(app: FastifyInstance) {
     app.post('/', {
         preHandler: [Auth]
     } ,async (request, reply) => {
@@ -39,10 +39,10 @@ export async function Snaks(app: FastifyInstance) {
     }, async (request, reply) => {
         const { userId } = request.cookies
 
-        const snaks = await knex('snacks').select('*').where('user_id', userId)
+        const snacks = await knex('snacks').select('*').where('user_id', userId)
 
         return reply.status(200).send({
-            snaks
+            snacks
         })
     })
 
@@ -57,13 +57,13 @@ export async function Snaks(app: FastifyInstance) {
 
         const { id } = paramsSchema.parse(request.params)
 
-        const snaks = await knex('snacks').select('*').where({
+        const snacks = await knex('snacks').select('*').where({
             user_id: userId,
             snack_id: id
         }).first()
 
         return reply.status(200).send({
-            snaks
+            snacks
         })
     })
 
@@ -127,12 +127,12 @@ export async function Snaks(app: FastifyInstance) {
     }, async (request, reply) => {
         const { userId } = request.cookies
 
-        const totalSnacksInside = await knex('snacks').count('snack_id', { as: 'snacks'}).where({
+        const totalsnacksInside = await knex('snacks').count('snack_id', { as: 'snacks'}).where({
             user_id: userId,
             insideOroutside: 'inside'
         }).first()
 
-        const totalSnacksOutside = await knex('snacks').count('snack_id', { as: 'snacks'}).where({
+        const totalsnacksOutside = await knex('snacks').count('snack_id', { as: 'snacks'}).where({
             user_id: userId,
             insideOroutside: 'outside'
         }).first()
@@ -157,9 +157,9 @@ export async function Snaks(app: FastifyInstance) {
         }, { bestOnDietSequence: 0, currentSequence: 0 })
 
         return reply.status(200).send({
-            totalSnacks: totalSnakcs.length,
-            insideDiet: totalSnacksInside?.snacks,
-            outsideDiet: totalSnacksOutside?.snacks,
+            totalsnacks: totalSnakcs.length,
+            insideDiet: totalsnacksInside?.snacks,
+            outsideDiet: totalsnacksOutside?.snacks,
             bestSequence: bestOnDietSequence
         })
     })

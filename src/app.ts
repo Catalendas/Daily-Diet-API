@@ -2,7 +2,7 @@ import fastify from "fastify";
 import cookie from "@fastify/cookie"
 import { User } from "./routes/user";
 import { Session } from "./routes/session";
-import { Snaks } from "./routes/snaks";
+import { Snacks } from "./routes/snacks";
 
 export const app = fastify()
 
@@ -16,6 +16,6 @@ app.register(Session, {
     prefix: 'session'
 })
 
-app.register(Snaks, {
-    prefix: 'snaks'
+app.register(Snacks, {
+    prefix: 'snacks'
 })
